@@ -15,7 +15,24 @@
           <img class = "newappIcon" src="images/newapp-icon.png">
         </td>
         <td>
-          <h1>Hello world! This is a sample Node app. Thursday at 10:43am.</h1>
+          <h1>Hello world! This is a sample Node app.</h1>
+          <p>The date is:
+            <script>
+            var currentDate = new Date()
+            var day = currentDate.getDate()
+            var month = currentDate.getMonth() + 1
+            var year = currentDate.getFullYear()
+            document.write("<b>" + day + "/" + month + "/" + year + "</b>")
+            </script>
+            .</p>
+            <p>The time is:
+                <script>
+                var currentDate = new Date()
+                var hour = currentDate.getHours()
+                var minute = currentDate.getMinutes()
+                document.write("<b>" + hour + ":" + minute + "</b>")
+                </script>
+            .</p>
         </td>
       </tr>
     </table>
